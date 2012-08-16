@@ -110,6 +110,9 @@ input[type="color"],
 form input {
   margin: 0 0 12px 0;
 }
+table input {
+  margin: 0;
+}
 label input,
 label textarea,
 label select {
