@@ -104,9 +104,14 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 34px;
-  margin: 0 0 12px 0;
   font-size: 13px;
   line-height: 18px;
+}
+form input {
+  margin: 0 0 12px 0;
+}
+table input {
+  margin: 0;
 }
 label input,
 label textarea,
