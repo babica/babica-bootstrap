@@ -1,1 +1,2 @@
 <h1><a href="https://github.com/tomnunes/babica-bootstrap" title="">Babica Bootstrap</a></h1>
+<p>A front-end toolkit, created initially for better web development for <a href="http://babica.com.br">Babica</a>. And now shared for developers who are interested.</p>
