@@ -86,7 +86,6 @@ label {
   color: #333333;
 }
 select,
-textarea,
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -107,7 +106,9 @@ input[type="color"],
   font-size: 13px;
   line-height: 18px;
 }
-form input {
+form input,
+form select,
+form textarea {
   margin: 0 0 12px 0;
 }
 table input {

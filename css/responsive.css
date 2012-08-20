@@ -175,6 +175,9 @@
   .limit {
     width: auto;
   }
+  .limit-fluid {
+    padding: 0;
+  }
   .row {
     margin-left: 0;
   }
@@ -367,7 +370,7 @@
     padding: 9px;
   }
   .navbar .navbar-inner {
-    padding: 5px 10px;
+    padding: 5px 15px;
   }
   .navbar-static .navbar-inner {
     padding-left: 10px;
