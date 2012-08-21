@@ -105,6 +105,10 @@ input[type="color"],
   height: 34px;
   font-size: 13px;
   line-height: 18px;
+
+  /* IE7 */
+  *height: 19px;
+
 }
 form input,
 form select,
@@ -227,6 +231,9 @@ input, textarea, select {
     -moz-box-shadow: inset 0 1px 1px #DDDDDD;
     box-shadow: inset 0 1px 1px #DDDDDD;
     width: 100%;
+
+    /* IE 7 */
+    *width: 90%;
 
 }
 input:focus,
