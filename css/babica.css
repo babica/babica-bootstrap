@@ -266,6 +266,10 @@ section {
 .limit-fluid:after {
   clear: both;
 }
+[class*="grid"].centered {
+  float: none;
+  margin: 0 auto;
+}
 
 p {
   margin: 0 0 12px;
@@ -551,6 +555,9 @@ table {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+}
+.box > form {
+  margin-bottom: 0;
 }
 .box-large {
   padding: 24px;
