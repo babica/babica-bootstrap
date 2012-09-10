@@ -385,9 +385,6 @@ textarea[readonly] {
 .form-horizontal .hide {
   display: none;
 }
-.form-inline label {
-  margin-right: 5px;
-}
 .form-inline input,
 .form-inline select {
   margin-top: 3px;
