@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Alerts
+   ========================================================================== */
+
+.alert {
+    padding: 8px 35px 8px 14px;
+    padding: 0.5rem 2.1875rem 0.5rem 0.875rem; /* 8px ÷ 16px & 35px ÷ 16px & 14px ÷ 16px */
+    margin-bottom: 18px;
+    margin-bottom: 1.125rem; /* 18px ÷ 16px */
+    @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.5));
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.alert-close {
+    /* Hiding close button, i don't if it's really necessary */
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+
+.alert-info {
+    background-color: #C8E0EC;
+    border-color: #B3DBE4;
+    color: #3a87ad;
+}
+
+.alert-info a {
+    color: #3a87ad;
+}
+
+.alert-info a:hover {
+    background-color: #3a87ad;
+    color: #fff;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+}
+
+.alert-success a {
+    color: #468847;
+}
+
+.alert-success a:hover {
+    background-color: #468847;
+    color: #fff;
+}    
+
+.alert-warning {
+    background-color: #f7f1d1;
+    border: 1px solid #f1e5cd;
+    color: #c09853;
+}
+
+.alert-warning a {
+    color: #c09853;
+}
+
+.alert-warning a:hover {
+    background-color: #c09853;
+    color: #fff;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+}
+
+.alert-error a {
+    color: #b94a48;
+}
+
+.alert-error a:hover {
+    background-color: #b94a48;
+    color: #fff;
+}
+
+/* Old styles. Maybe I'm going to use this :) */
+
+/*.alert-heading {
+    color: inherit;
+}
+.alert-block {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+    margin-bottom: 0;
+}
+.alert-block p + p {
+    margin-top: 5px;
+}*/
