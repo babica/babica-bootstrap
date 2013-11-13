@@ -5,7 +5,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 $script = <<SCRIPT
-
+sudo apt-get -y update
+sudo apt-get -y install apache2
 gem update --system
 gem install compass
 SCRIPT
