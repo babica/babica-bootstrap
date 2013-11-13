@@ -40,3 +40,7 @@ Thumbs.db
 # Vagrant #
 ###########
 .vagrant
+
+# Compass and Sass #
+####################
+.sass-cache
