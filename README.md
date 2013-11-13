@@ -10,6 +10,12 @@
     <li>If everything is ok, open "http://localhost:8080/test" and done :)</li>
 </ol>
 
+<p>Using compass</p>
+<ol>
+    <li>Run "vagrant ssh"</li>
+    <li>Go to the project directory and run "compass watch"</li>
+</ol>
+
 <p>Browsers supported</p>
 <ul>
   <li>Google Chrome 4+</li>
