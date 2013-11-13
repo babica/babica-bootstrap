@@ -585,3 +585,53 @@ a:hover {
   color: white;
   background-color: #cc0000;
 }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* line 5, ../sass/core/_typography.scss */
+body {
+  font: normal normal 100%/1.5 "Lucida Grande", helvetica, arial, verdana, sans-serif;
+}
+
+/* line 9, ../sass/core/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+}
+
+/* line 13, ../sass/core/_typography.scss */
+h1 {
+  /* 24px \ 16px & 22px \ 16px */
+}
+
+/* line 20, ../sass/core/_typography.scss */
+h2 {
+  /* 22px \ 16px & 22px \ 16px */
+}
+
+/* line 24, ../sass/core/_typography.scss */
+h3 {
+  /* 20px \ 16px & 22px \ 16px */
+}
+
+/* line 28, ../sass/core/_typography.scss */
+h4 {
+  /* 18px \ 16px & 22px \ 16px */
+}
+
+/* line 32, ../sass/core/_typography.scss */
+h5 {
+  /* 16px \ 16px & 22px \ 16px */
+}
+
+/* line 36, ../sass/core/_typography.scss */
+h6 {
+  /* 14px \ 16px & 22px \ 16px */
+}
+
+/* line 40, ../sass/core/_typography.scss */
+a, p, strong {
+  font-size: 12px;
+  font-size: 0.75rem;
+  /* 12px ÷ 16px */
+}
