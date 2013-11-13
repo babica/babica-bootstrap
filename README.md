@@ -1,9 +1,16 @@
-<h1><a href="https://github.com/tomnunes/babica-bootstrap" title="">Babica Bootstrap</a></h1>
-<p>A front-end toolkit, initially created and based on the study of the <a href="http://foundation.zurb.com/">Foundation</a> and <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> for better web development for <a href="http://babica.com.br">Babica</a>.</p>
+<h1><a href="https://github.com/babica/babica-bootstrap" title="">Babica Bootstrap</a></h1>
 
-<p>Developed with html5, css3, and responsive design.</p>
+<p><strong>Description:</strong> Babica bootstrap is a set of libs to help the front-end development in <a href="http://babica.com.br">babica.com.br</a></p>
 
-<p>Browser supported</p>
+<p>Setup</p>
+<ol>
+    <li>Install vagrant -> http://vagrantup.com</li>
+    <li>Run "vagrant up" (root directory)</li>
+    <li>Run "vagrant provision"</li>
+    <li>If everything is ok, open "http://localhost:8080/test" and done :)</li>
+</ol>
+
+<p>Browsers supported</p>
 <ul>
   <li>Google Chrome 4+</li>
   <li>Firefox 4+</li>
