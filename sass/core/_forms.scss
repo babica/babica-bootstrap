@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.babica-form {
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"], 
+    textarea,
+    select {
+        display: inline-block;
+        width: 100%; /* default behavior is extending to full area, overwrite as needed */
+        padding: 10px;
+        padding: 0.625rem; /* 10px ÷ 16px */
+        padding-top: 12px;
+        padding-top: 0.75rem; /* 12px ÷ 16px */
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #bdc5ce;
+        font-size: 12px;
+        font-size: 0.75rem; /* 12px ÷ 16px */
+        @include single-box-shadow(rgba(0, 0, 0, 0.1), 0, 1px, 1px, 0, inset);
+        @include border-radius(4px);
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: 0;
+        outline: thin dotted \9; /* IE6-9 */
+        border-color: #ab5151;
+        @include single-box-shadow(rgba(0, 0, 0, 0.1), 0, 1px, 8px, 1px, inset);
+    }
+
+    input.input-mini {
+    }
+
+    input.input-small {
+    }
+
+    input.input-medium {
+    }
+
+    input.input-large {
+    }
+
+    input.input-xlarge {
+        font-size: 18px;
+        font-size: 1.125rem; /* 18px ÷ 16px */
+    }
+
+    input.input-error {
+        background-color: #f9e2df;
+    }
+
+    label {
+        margin: 0.5rem 0 0.2rem; /* Verificar valores no form inline */
+    }
+
+    .input-error-tooltip {
+        padding: 6px;
+        padding: 0.375rem; /* 6px ÷ 16px */
+        background-color: #444;
+        color: #fff;
+        font-size: 14px;
+        font-size: 0.875reml /* 14px ÷ 16px */
+    }
+
+}
+
+.form-stacked {
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    select,
+    textarea,
+    label {
+        display: block;
+        margin: 4px 0 16px;
+        margin: 0.25em 0 0.625rem; /* 4px ÷ 16px & 10px ÷ 16px */
+    }
+
+    label {
+        margin: 0 0 4px;
+        margin: 0 0 0.25rem; /* 4px ÷ 16px */
+    }
+
+    .link-helper {
+        display: block;
+        float: right;
+        margin-top: -10px;
+        margin-top: -0.625rem; /* 10px ÷ 16px */
+    }
+
+}
