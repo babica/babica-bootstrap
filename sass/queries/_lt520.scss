@@ -1,0 +1,14 @@
+/*******************************************************************************
+*
+*  Media Queries » Less than 520px
+*
+*  These styles will be applied to portable devices with small screens
+*  (e.g. smartphones)
+*
+*******************************************************************************/
+
+@media screen and (max-width: 520px) {
+    
+    @import "queries/_lt768base";
+
+}
