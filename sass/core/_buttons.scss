@@ -6,43 +6,49 @@
     display: inline-block;
     *display: inline; /* IE7 inline-block hack */
     zoom: 1;
-    padding: 7px 10px;
-    padding: 0.4375rem 0.625rem; /* 7px ÷ 16px & 10px ÷ 16px */
+    padding: 6px 9px;
+    padding: 0.375rem 0.5625rem; /* 6px ÷ 16px & 9px ÷ 16px */
     line-height: normal;
     background-color: #f9f9f9;
     border: 1px solid #bbb;
     color: #333;
     cursor: pointer;
-    font-size: 12px;
-    font-size: 0.75rem; /* 12px ÷ 16px */
+    font-size: 11px;
+    font-size: 0.6875rem; /* 12px ÷ 16px */
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    @include border-radius(4px);
+    @include border-radius(2px);
     @include background-image(linear-gradient(top, #f9f9f9, #d8d8d8));
 }
 
-.btn-xxsmall {
+.btn:hover{
+    background: #ddd;
+    color: #333;
+}
+
+.btn-xsmall {
     padding: 3px 5px;
     padding: 0.1875rem 0.3125rem; /* 3px ÷ 16px & 5px ÷ 16px */
     font-size: 10px;
     font-size: 0.625rem; /* 10px ÷ 16px */
 }
 
-.btn-xsmall {
-    font-size: 70%;
-}
-
 .btn-small {
-    font-size: 85%;
+    font-size: 10px;
+    font-size: 0.625rem; /* 10px ÷ 16px */
 }
 
 .btn-large {
-    font-size: 110%;
+    font-size: 14px;
+    font-size: 0.8725rem; /* 14px ÷ 16px */
 }
 
 .btn-xlarge {
-    font-size: 125%;
+    padding: 7px 10px;
+    padding: 0.4375rem 0.625rem; /* 7px ÷ 16px & 10px ÷ 16px */
+    font-size: 16px;
+    font-size: 1rem; /* 16px ÷ 16px */
 }
 
 .btn-confirm,
@@ -50,7 +56,9 @@
 .btn-warning,
 .btn-warning:hover,
 .btn-cancel,
-.btn-cancel:hover {
+.btn-cancel:hover,
+.btn-info,
+.btn-info:hover {
     color: #fff;
 }
 
@@ -85,6 +93,16 @@
     border-color: #bd362f;
 }
 
+.btn-info {
+    background-color: #70a3c5;
+    border-color: #59809b;
+    @include background-image(linear-gradient(top, #70a3c5, #417ca5));
+}
+
+.btn-info:hover {
+    background: #417ca5;
+}
+
 /* ==========================================================================
    Menu buttons
    ========================================================================== */
@@ -103,7 +121,6 @@
 
 .menu-btns a {
     background-color: #d9e2e9;
-    border-radius: 4px;
     border: 1px solid #bdc5ce;
     color: #596c7a;
     display: block;
@@ -112,6 +129,7 @@
     text-decoration: none;
     font-size: 12px;
     font-size: 0.75rem; /* 12px ÷ 16px */
+    @include border-radius(2px);
 }
 
 .menu-btns a:hover {

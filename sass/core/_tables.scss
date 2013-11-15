@@ -1,0 +1,28 @@
+.table {
+
+    th {
+        background-color: #eee;
+    }
+
+    th, td {
+        padding: 4px;
+        line-height: 12px;
+        border-top: 1px solid #ddd;
+    }
+    
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+    background-color: #F2F2F2;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: #ECF0F4;
+}

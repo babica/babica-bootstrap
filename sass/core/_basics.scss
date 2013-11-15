@@ -3,7 +3,12 @@
    ========================================================================== */
 
 body {
-    color: #444;
+    color: #777;
+}
+
+section {
+    padding: 20px 0;
+    padding: 1.25rem 0; /* 20px ÷ 16px */
 }
 
 /* ==========================================================================
@@ -17,4 +22,28 @@ a {
 a:hover {
     color: $LINK_COLOR_HOVER;
     background-color: $LINK_BG_COLOR_HOVER;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 20px;
+    padding: 0 0 0 1.25rem; /* 20px ÷ 16px */
+}
+
+/* ==========================================================================
+   Markers
+   ========================================================================== */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    background-image: -webkit-linear-gradient(left, #eee, #ddd, #eee);
+    background-image:    -moz-linear-gradient(left, #eee, #ddd, #eee);
+    background-image:     -ms-linear-gradient(left, #eee, #ddd, #eee);
+    background-image:      -o-linear-gradient(left, #eee, #ddd, #eee);
 }

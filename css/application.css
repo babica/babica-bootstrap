@@ -569,21 +569,54 @@ table {
    ========================================================================== */
 /* line 5, ../sass/core/_basics.scss */
 body {
-  color: #444;
+  color: #777;
+}
+
+/* line 9, ../sass/core/_basics.scss */
+section {
+  padding: 20px 0;
+  padding: 1.25rem 0;
+  /* 20px ÷ 16px */
 }
 
 /* ==========================================================================
    Links
    ========================================================================== */
-/* line 13, ../sass/core/_basics.scss */
+/* line 18, ../sass/core/_basics.scss */
 a {
   color: #cc0000;
 }
 
-/* line 17, ../sass/core/_basics.scss */
+/* line 22, ../sass/core/_basics.scss */
 a:hover {
   color: white;
   background-color: #cc0000;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/* line 33, ../sass/core/_basics.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 20px;
+  padding: 0 0 0 1.25rem;
+  /* 20px ÷ 16px */
+}
+
+/* ==========================================================================
+   Markers
+   ========================================================================== */
+/* line 41, ../sass/core/_basics.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  background-image: -webkit-linear-gradient(left, #eeeeee, #dddddd, #eeeeee);
+  background-image: -moz-linear-gradient(left, #eeeeee, #dddddd, #eeeeee);
+  background-image: -ms-linear-gradient(left, #eeeeee, #dddddd, #eeeeee);
+  background-image: -o-linear-gradient(left, #eeeeee, #dddddd, #eeeeee);
 }
 
 /* ==========================================================================
@@ -591,49 +624,70 @@ a:hover {
    ========================================================================== */
 /* line 5, ../sass/core/_typography.scss */
 body {
-  font: normal normal 100%/1.5 "Lucida Grande", helvetica, arial, verdana, sans-serif;
+  font: normal normal 100%/1.5 "Lucida Grande", "Lucida Sans Unicode", helvetica, arial, verdana, sans-serif;
 }
 
 /* line 9, ../sass/core/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  margin: 0.5rem 0;
+  /* 10px ÷ 16px */
+  font-weight: normal;
   color: #222;
 }
 
-/* line 13, ../sass/core/_typography.scss */
+/* line 16, ../sass/core/_typography.scss */
 h1 {
-  /* 24px \ 16px & 22px \ 16px */
+  font-size: 23px;
+  font-size: 1.4375rem;
+  /* 23px ÷ 16px */
 }
 
-/* line 20, ../sass/core/_typography.scss */
+/* line 21, ../sass/core/_typography.scss */
 h2 {
-  /* 22px \ 16px & 22px \ 16px */
+  font-size: 21px;
+  font-size: 1.3125rem;
+  /* 21px ÷ 16px */
 }
 
-/* line 24, ../sass/core/_typography.scss */
+/* line 26, ../sass/core/_typography.scss */
 h3 {
-  /* 20px \ 16px & 22px \ 16px */
+  font-size: 19px;
+  font-size: 1.1875rem;
+  /* 19px ÷ 16px */
 }
 
-/* line 28, ../sass/core/_typography.scss */
+/* line 31, ../sass/core/_typography.scss */
 h4 {
-  /* 18px \ 16px & 22px \ 16px */
-}
-
-/* line 32, ../sass/core/_typography.scss */
-h5 {
-  /* 16px \ 16px & 22px \ 16px */
+  font-size: 17px;
+  font-size: 1.0625rem;
+  /* 17px ÷ 16px */
 }
 
 /* line 36, ../sass/core/_typography.scss */
-h6 {
-  /* 14px \ 16px & 22px \ 16px */
+h5 {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  /* 15px ÷ 16px */
 }
 
-/* line 40, ../sass/core/_typography.scss */
-a, p, strong {
-  font-size: 12px;
-  font-size: 0.75rem;
+/* line 41, ../sass/core/_typography.scss */
+h6 {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  /* 13px ÷ 16px */
+}
+
+/* line 46, ../sass/core/_typography.scss */
+div, a, p, li, strong, label, th, td {
+  font-size: 11px;
+  font-size: 0.6875rem;
   /* 12px ÷ 16px */
+}
+
+/* line 51, ../sass/core/_typography.scss */
+small {
+  font-size: 60%;
 }
 
 /* ==========================================================================
@@ -644,7 +698,7 @@ a, p, strong {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url("/babica_css/scripts/boxsizing.htc");
+  *behavior: url("/js/boxsizing.htc");
 }
 
 /* line 12, ../sass/core/_grid.scss */
@@ -710,14 +764,22 @@ a, p, strong {
 
 /* line 62, ../sass/core/_grid.scss */
 .module {
-  padding: 20px;
+  padding: 10px;
+  padding: 0.625rem;
+  /* 10px ÷ 16px */
   background: #eee;
 }
 
 /* ==========================================================================
    Forms
    ========================================================================== */
-/* line 22, ../sass/core/_forms.scss */
+/* line 7, ../sass/core/_forms.scss */
+.babica-form fieldset {
+  padding: 12px 8px;
+  padding: 0.75rem 0.5rem;
+  /* 10px ÷ 16px & 8px ÷ 16px */
+}
+/* line 27, ../sass/core/_forms.scss */
 .babica-form input[type="text"],
 .babica-form input[type="password"],
 .babica-form input[type="email"],
@@ -735,30 +797,25 @@ a, p, strong {
 .babica-form textarea,
 .babica-form select {
   display: inline-block;
-  width: 100%;
-  /* default behavior is extending to full area, overwrite as needed */
-  padding: 10px;
-  padding: 0.625rem;
-  /* 10px ÷ 16px */
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  /* 12px ÷ 16px */
+  padding: 6px 5px;
+  padding: 0.375rem 0.3125rem;
+  /* 8px ÷ 16px */
   background-color: #fff;
   color: #333;
   border: 1px solid #bdc5ce;
   font-size: 12px;
   font-size: 0.75rem;
   /* 12px ÷ 16px */
-  -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 3px 0 #dddddd;
+  -moz-box-shadow: inset 0 1px 3px 0 #dddddd;
+  box-shadow: inset 0 1px 3px 0 #dddddd;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 53, ../sass/core/_forms.scss */
+/* line 55, ../sass/core/_forms.scss */
 .babica-form input[type="text"]:focus,
 .babica-form input[type="password"]:focus,
 .babica-form input[type="email"]:focus,
@@ -783,22 +840,22 @@ a, p, strong {
   -moz-box-shadow: inset 0 1px 8px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 8px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 72, ../sass/core/_forms.scss */
+/* line 74, ../sass/core/_forms.scss */
 .babica-form input.input-xlarge {
   font-size: 18px;
   font-size: 1.125rem;
   /* 18px ÷ 16px */
 }
-/* line 77, ../sass/core/_forms.scss */
+/* line 79, ../sass/core/_forms.scss */
 .babica-form input.input-error {
   background-color: #f9e2df;
 }
-/* line 81, ../sass/core/_forms.scss */
+/* line 83, ../sass/core/_forms.scss */
 .babica-form label {
   margin: 0.5rem 0 0.2rem;
   /* Verificar valores no form inline */
 }
-/* line 85, ../sass/core/_forms.scss */
+/* line 87, ../sass/core/_forms.scss */
 .babica-form .input-error-tooltip {
   padding: 6px;
   padding: 0.375rem;
@@ -809,7 +866,7 @@ a, p, strong {
   font-size: 0.875reml;
 }
 
-/* line 114, ../sass/core/_forms.scss */
+/* line 116, ../sass/core/_forms.scss */
 .form-stacked input[type="text"],
 .form-stacked input[type="password"],
 .form-stacked input[type="email"],
@@ -828,17 +885,19 @@ a, p, strong {
 .form-stacked textarea,
 .form-stacked label {
   display: block;
+  width: 100%;
+  /* default behavior is extending to full area, overwrite as needed */
   margin: 4px 0 16px;
-  margin: 0.25em 0 0.625rem;
+  margin: 0.25rem 0 0.625rem;
   /* 4px ÷ 16px & 10px ÷ 16px */
 }
-/* line 120, ../sass/core/_forms.scss */
+/* line 123, ../sass/core/_forms.scss */
 .form-stacked label {
   margin: 0 0 4px;
   margin: 0 0 0.25rem;
   /* 4px ÷ 16px */
 }
-/* line 125, ../sass/core/_forms.scss */
+/* line 128, ../sass/core/_forms.scss */
 .form-stacked .link-helper {
   display: block;
   float: right;
@@ -856,25 +915,25 @@ a, p, strong {
   *display: inline;
   /* IE7 inline-block hack */
   zoom: 1;
-  padding: 7px 10px;
-  padding: 0.4375rem 0.625rem;
-  /* 7px ÷ 16px & 10px ÷ 16px */
+  padding: 6px 9px;
+  padding: 0.375rem 0.5625rem;
+  /* 6px ÷ 16px & 9px ÷ 16px */
   line-height: normal;
   background-color: #f9f9f9;
   border: 1px solid #bbb;
   color: #333;
   cursor: pointer;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 11px;
+  font-size: 0.6875rem;
   /* 12px ÷ 16px */
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #d8d8d8));
   background-image: -webkit-linear-gradient(top, #f9f9f9, #d8d8d8);
   background-image: -moz-linear-gradient(top, #f9f9f9, #d8d8d8);
@@ -883,7 +942,13 @@ a, p, strong {
 }
 
 /* line 25, ../sass/core/_buttons.scss */
-.btn-xxsmall {
+.btn:hover {
+  background: #ddd;
+  color: #333;
+}
+
+/* line 30, ../sass/core/_buttons.scss */
+.btn-xsmall {
   padding: 3px 5px;
   padding: 0.1875rem 0.3125rem;
   /* 3px ÷ 16px & 5px ÷ 16px */
@@ -892,37 +957,43 @@ a, p, strong {
   /* 10px ÷ 16px */
 }
 
-/* line 32, ../sass/core/_buttons.scss */
-.btn-xsmall {
-  font-size: 70%;
-}
-
-/* line 36, ../sass/core/_buttons.scss */
+/* line 37, ../sass/core/_buttons.scss */
 .btn-small {
-  font-size: 85%;
+  font-size: 10px;
+  font-size: 0.625rem;
+  /* 10px ÷ 16px */
 }
 
-/* line 40, ../sass/core/_buttons.scss */
+/* line 42, ../sass/core/_buttons.scss */
 .btn-large {
-  font-size: 110%;
+  font-size: 14px;
+  font-size: 0.8725rem;
+  /* 14px ÷ 16px */
 }
 
-/* line 44, ../sass/core/_buttons.scss */
+/* line 47, ../sass/core/_buttons.scss */
 .btn-xlarge {
-  font-size: 125%;
+  padding: 7px 10px;
+  padding: 0.4375rem 0.625rem;
+  /* 7px ÷ 16px & 10px ÷ 16px */
+  font-size: 16px;
+  font-size: 1rem;
+  /* 16px ÷ 16px */
 }
 
-/* line 53, ../sass/core/_buttons.scss */
+/* line 61, ../sass/core/_buttons.scss */
 .btn-confirm,
 .btn-confirm:hover,
 .btn-warning,
 .btn-warning:hover,
 .btn-cancel,
-.btn-cancel:hover {
+.btn-cancel:hover,
+.btn-info,
+.btn-info:hover {
   color: #fff;
 }
 
-/* line 57, ../sass/core/_buttons.scss */
+/* line 65, ../sass/core/_buttons.scss */
 .btn-confirm {
   background-color: #8bc252;
   border: 1px solid #658c70;
@@ -933,12 +1004,12 @@ a, p, strong {
   background-image: linear-gradient(top, #8bc252, #669238);
 }
 
-/* line 63, ../sass/core/_buttons.scss */
+/* line 71, ../sass/core/_buttons.scss */
 .btn-confirm:hover {
   background: #669238;
 }
 
-/* line 67, ../sass/core/_buttons.scss */
+/* line 75, ../sass/core/_buttons.scss */
 .btn-warning {
   background-color: #faa732;
   border: 1px solid #d58f2c;
@@ -949,12 +1020,12 @@ a, p, strong {
   background-image: linear-gradient(top, #fbb450, #e69421);
 }
 
-/* line 73, ../sass/core/_buttons.scss */
+/* line 81, ../sass/core/_buttons.scss */
 .btn-warning:hover {
   background: #f89406;
 }
 
-/* line 77, ../sass/core/_buttons.scss */
+/* line 85, ../sass/core/_buttons.scss */
 .btn-cancel {
   background-color: #e64444;
   border: 1px solid #bc4440;
@@ -965,22 +1036,38 @@ a, p, strong {
   background-image: linear-gradient(top, #ee5f5f, #ce3535);
 }
 
-/* line 83, ../sass/core/_buttons.scss */
+/* line 91, ../sass/core/_buttons.scss */
 .btn-cancel:hover {
   background: #ce3535;
   border-color: #bd362f;
 }
 
+/* line 96, ../sass/core/_buttons.scss */
+.btn-info {
+  background-color: #70a3c5;
+  border-color: #59809b;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #70a3c5), color-stop(100%, #417ca5));
+  background-image: -webkit-linear-gradient(top, #70a3c5, #417ca5);
+  background-image: -moz-linear-gradient(top, #70a3c5, #417ca5);
+  background-image: -o-linear-gradient(top, #70a3c5, #417ca5);
+  background-image: linear-gradient(top, #70a3c5, #417ca5);
+}
+
+/* line 102, ../sass/core/_buttons.scss */
+.btn-info:hover {
+  background: #417ca5;
+}
+
 /* ==========================================================================
    Menu buttons
    ========================================================================== */
-/* line 92, ../sass/core/_buttons.scss */
+/* line 110, ../sass/core/_buttons.scss */
 .menu-btns ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 97, ../sass/core/_buttons.scss */
+/* line 115, ../sass/core/_buttons.scss */
 .menu-btns ul li {
   float: left;
   list-style: none;
@@ -989,10 +1076,9 @@ a, p, strong {
   /* 7px ÷ 16px */
 }
 
-/* line 104, ../sass/core/_buttons.scss */
+/* line 122, ../sass/core/_buttons.scss */
 .menu-btns a {
   background-color: #d9e2e9;
-  border-radius: 4px;
   border: 1px solid #bdc5ce;
   color: #596c7a;
   display: block;
@@ -1003,9 +1089,14 @@ a, p, strong {
   font-size: 12px;
   font-size: 0.75rem;
   /* 12px ÷ 16px */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 
-/* line 117, ../sass/core/_buttons.scss */
+/* line 135, ../sass/core/_buttons.scss */
 .menu-btns a:hover {
   background-color: #999;
   color: #fff;
@@ -1022,107 +1113,129 @@ a, p, strong {
   margin-bottom: 18px;
   margin-bottom: 1.125rem;
   /* 18px ÷ 16px */
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #eee;
   border: 1px solid #ddd;
   color: #666;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 /* line 16, ../sass/core/_alerts.scss */
-.alert-close {
-  /* Hiding close button, i don't if it's really necessary */
-  display: none;
-  float: right;
-  cursor: pointer;
-}
-
-/* line 23, ../sass/core/_alerts.scss */
 .alert-info {
   background-color: #C8E0EC;
   border-color: #B3DBE4;
   color: #3a87ad;
 }
+/* line 21, ../sass/core/_alerts.scss */
+.alert-info .alert-title {
+  color: #3a87ad;
+}
 
-/* line 29, ../sass/core/_alerts.scss */
+/* line 26, ../sass/core/_alerts.scss */
 .alert-info a {
   color: #3a87ad;
 }
 
-/* line 33, ../sass/core/_alerts.scss */
+/* line 30, ../sass/core/_alerts.scss */
 .alert-info a:hover {
   background-color: #3a87ad;
   color: #fff;
 }
 
-/* line 38, ../sass/core/_alerts.scss */
+/* line 35, ../sass/core/_alerts.scss */
 .alert-success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #468847;
 }
+/* line 40, ../sass/core/_alerts.scss */
+.alert-success .alert-title {
+  color: #468847;
+}
 
-/* line 44, ../sass/core/_alerts.scss */
+/* line 45, ../sass/core/_alerts.scss */
 .alert-success a {
   color: #468847;
 }
 
-/* line 48, ../sass/core/_alerts.scss */
+/* line 49, ../sass/core/_alerts.scss */
 .alert-success a:hover {
   background-color: #468847;
   color: #fff;
 }
 
-/* line 53, ../sass/core/_alerts.scss */
+/* line 54, ../sass/core/_alerts.scss */
 .alert-warning {
   background-color: #f7f1d1;
   border: 1px solid #f1e5cd;
   color: #c09853;
 }
-
 /* line 59, ../sass/core/_alerts.scss */
+.alert-warning .alert-title {
+  color: #c09853;
+}
+
+/* line 64, ../sass/core/_alerts.scss */
 .alert-warning a {
   color: #c09853;
 }
 
-/* line 63, ../sass/core/_alerts.scss */
+/* line 68, ../sass/core/_alerts.scss */
 .alert-warning a:hover {
   background-color: #c09853;
   color: #fff;
 }
 
-/* line 68, ../sass/core/_alerts.scss */
+/* line 73, ../sass/core/_alerts.scss */
 .alert-error {
   background-color: #f2dede;
   border-color: #eed3d7;
   color: #b94a48;
 }
+/* line 78, ../sass/core/_alerts.scss */
+.alert-error .alert-title {
+  color: #b94a48;
+}
 
-/* line 74, ../sass/core/_alerts.scss */
+/* line 83, ../sass/core/_alerts.scss */
 .alert-error a {
   color: #b94a48;
 }
 
-/* line 78, ../sass/core/_alerts.scss */
+/* line 87, ../sass/core/_alerts.scss */
 .alert-error a:hover {
   background-color: #b94a48;
   color: #fff;
 }
 
-/* Old styles. Maybe I'm going to use this :) */
-/*.alert-heading {
-    color: inherit;
+/* line 3, ../sass/core/_tables.scss */
+.table th {
+  background-color: #eee;
 }
-.alert-block {
-    padding-top: 14px;
-    padding-bottom: 14px;
+/* line 7, ../sass/core/_tables.scss */
+.table th, .table td {
+  padding: 4px;
+  line-height: 12px;
+  border-top: 1px solid #ddd;
 }
-.alert-block > p,
-.alert-block > ul {
-    margin-bottom: 0;
+
+/* line 16, ../sass/core/_tables.scss */
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ddd;
 }
-.alert-block p + p {
-    margin-top: 5px;
-}*/
+
+/* line 21, ../sass/core/_tables.scss */
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #F2F2F2;
+}
+
+/* line 26, ../sass/core/_tables.scss */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #ECF0F4;
+}
+
 /*******************************************************************************
 *
 *  Media Queries » Less than 520px

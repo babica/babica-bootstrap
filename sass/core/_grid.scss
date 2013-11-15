@@ -6,7 +6,7 @@ $pad: 20px;
 
 * {
     @include box-sizing(border-box);
-    *behavior: url('/babica_css/scripts/boxsizing.htc');
+    *behavior: url('/js/boxsizing.htc');
 }
 
 .grid {
@@ -60,6 +60,7 @@ $pad: 20px;
 }
 
 .module {
-    padding: $pad;
+    padding: 10px;
+    padding: 0.625rem; /* 10px ÷ 16px */
     background: #eee;
 }
